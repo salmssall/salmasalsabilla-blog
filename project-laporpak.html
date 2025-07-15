@@ -1,51 +1,117 @@
-<section style="background-color: #fff4ec; padding: 4rem 2rem; font-family: 'Segoe UI', sans-serif;">
-    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2rem; max-width: 1200px; margin: 0 auto;">
-      <!-- Text Content -->
-      <div style="flex: 1 1 500px; max-width: 600px;">
-        <h1 style="font-size: 3rem; color: #ff7b2c; font-weight: 800; margin-bottom: 0.5rem;">
-          LaporPak<span style="color:#ff7b2c;">.com</span>
-        </h1>
-        <p style="margin-top: -10px; font-size: 1rem; color: #1e293b; font-weight: 500;">An Innovative Public Reporting Platform</p>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tugas 2 - Proyek Sistem Pakar</title>
+  <style>
+    :root {
+      --orange: #f28b54;
+      --orange-dark: #e76f2d;
+      --orange-soft: #fff4ed;
+      --text-dark: #2c2c2c;
+    }
 
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--orange-soft);
+      color: var(--text-dark);
+      margin: 0;
+      padding: 0;
+    }
 
-        <p style="color: #334155; font-size: 1rem; margin-top: 1rem; line-height: 1.6;">
-          <strong>LaporPak.com</strong> is a digital platform designed to facilitate public issue reporting and monitor its follow-up process. 
-          This project was developed during the <strong>Second Hackathon</strong>, focusing on efficient reporting processes, and informative data visualization.
-        </p>
-        <h3 style="margin-top: 2rem; font-size: 1.4rem; color: #1e293b; font-weight: 700;">Key Contributions and Process</h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem;">
-          <div style="background-color: #ff7b2c; color: white; padding: 0.8rem 1rem; border-radius: 0.75rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
-            <img src="assets/icons/1.png" width="24"> User Experience Testing
-          </div>
-          <div style="background-color: #ff7b2c; color: white; padding: 0.8rem 1rem; border-radius: 0.75rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
-            <img src="assets/icons/2.png" width="24"> Efficient User Flow
-          </div>
-          <div style="background-color: #ff7b2c; color: white; padding: 0.8rem 1rem; border-radius: 0.75rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
-            <img src="assets/icons/3.png" width="24"> Data Visualization Dashboard
-          </div>
-          <div style="background-color: #ff7b2c; color: white; padding: 0.8rem 1rem; border-radius: 0.75rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
-            <img src="assets/icons/4.png" width="24"> Wireframes & Mockup
-          </div>
-        </div>
-      </div>
-  
-      <!-- Image Section -->
-      <div style="flex: 1 1 400px; text-align: center;">
-        <img src="assets/imgs/laporpak.png" alt="LaporPak Mockup" style="width: 100%; max-width: 400px;">
-      </div>
-    </div>
-  
-    <!-- Final Outcome -->
-    <div style="margin-top: 2rem; max-width: 1200px; margin-left: auto; margin-right: auto;">
-      <div style="display: flex; justify-content: flex-end; align-items: flex-start; gap: 0.75rem;">
-        <img src="assets/imgs/quote-up.png" width="24">
-        <div>
-          <h4 style="color: #1e293b; font-weight: 700; margin: 0;">Final Outcome</h4>
-          <p style="color: #475569; max-width: 500px; margin-top: 0.25rem;">
-            LaporPak.com offers a digital solution that simplifies public issue reporting and allows users to efficiently track their report status. Its user-friendly interface and gamification features make the platform both effective and engaging.
-          </p>
-        </div>
+    .container {
+      width: 90%;
+      max-width: 850px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+      font-size: 28px;
+      color: var(--orange-dark);
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      font-style: italic;
+      color: #8b5e3c;
+      margin-bottom: 20px;
+    }
+
+    .content h3 {
+      color: var(--orange-dark);
+      margin-top: 30px;
+    }
+
+    .content ul,
+    .content ol {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .content p {
+      margin-bottom: 15px;
+    }
+
+    .project-link {
+      display: inline-block;
+      color: var(--orange);
+      font-weight: bold;
+      text-decoration: none;
+      border-bottom: 2px solid var(--orange);
+      transition: all 0.3s;
+    }
+
+    .project-link:hover {
+      color: var(--orange-dark);
+      border-bottom-color: var(--orange-dark);
+    }
+
+    .project-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background-color: var(--orange);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .project-btn:hover {
+      background-color: var(--orange-dark);
+    }
+  </style>
+</head>
+<body>
+  <section class="tugas">
+    <div class="container">
+      <h2 class="section-title">Tugas 2: Proyek Sistem Pakar Identifikasi Jenis Kulit</h2>
+      <p class="subtitle">Berbasis Web Menggunakan Certainty Factor</p>
+
+      <div class="content">
+        <h3>Deskripsi Singkat</h3>
+        <p>Pada tugas ini, kelompok kami mengembangkan sistem pakar berbasis web yang dapat membantu pengguna mengidentifikasi jenis kulit wajah mereka. Sistem ini menggunakan metode Certainty Factor dan dilengkapi dengan antarmuka yang ramah pengguna.</p>
+
+        <h3>Fitur Utama</h3>
+        <ul>
+          <li>Diagnosa jenis kulit berdasarkan gejala</li>
+          <li>Perhitungan dengan metode Certainty Factor</li>
+          <li>Rekomendasi hasil dan saran perawatan</li>
+          <li>Antarmuka web yang responsif</li>
+        </ul>
+
+        <h3>Link Website Proyek</h3>
+        <p>Kamu bisa mencoba langsung sistem pakar kelompok kami melalui link berikut:</p>
+        <a href="https://sistem-pakar-kulit-kel2.vercel.app/" target="_blank" class="project-btn">🔗 Buka Website Sistem Pakar</a>
       </div>
     </div>
   </section>
-  
+</body>
+</html>

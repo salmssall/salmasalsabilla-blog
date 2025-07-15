@@ -1,50 +1,202 @@
-<section style="background-color: #fff4ec; padding: 4rem 2rem; font-family: 'Segoe UI', sans-serif;">
-    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2rem; max-width: 1200px; margin: 0 auto;">
-      <!-- Text Content -->
-      <div style="flex: 1 1 500px; max-width: 600px;">
-        <h1 style="font-size: 3rem; color: #ff7b2c; font-weight: 800; margin-bottom: 0.5rem;">
-            AgroTour<span style="color:#ff7b2c;"></span>
-        </h1>
-        <p style="margin-top: -10px; font-size: 1rem; color: #1e293b; font-weight: 500;">Digital Solution for Promoting Agro Tourism</p>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tugas 1 - Review Jurnal Sistem Pakar</title>
+  <style>
+    :root {
+      --orange: #f28b54;
+      --orange-dark: #e76f2d;
+      --orange-soft: #fff4ed;
+      --text-dark: #2c2c2c;
+    }
 
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--orange-soft);
+      color: var(--text-dark);
+      margin: 0;
+      padding: 0;
+    }
 
-        <p style="color: #334155; font-size: 1rem; margin-top: 1rem; line-height: 1.6;">
-          <strong>AgroTour</strong>  is a platform designed to enhance agro-tourism by providing users easy access to village tourism information. This project was developed during a <strong>National Hackathon</strong>,  where our team worked to deliver an intuitive and user-friendly design solution based on a pre-defined case study.
+    .container {
+      width: 90%;
+      max-width: 850px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+      font-size: 28px;
+      color: var(--orange-dark);
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      font-style: italic;
+      color: #8b5e3c;
+      margin-bottom: 20px;
+    }
+
+    .info {
+      background-color: #ffe3d0;
+      padding: 15px;
+      border-left: 5px solid var(--orange);
+      margin-bottom: 25px;
+      border-radius: 8px;
+    }
+
+    .info ul {
+      margin-top: 5px;
+      margin-left: 20px;
+    }
+
+    .content h3 {
+      color: var(--orange-dark);
+      margin-top: 30px;
+    }
+
+    .content ul,
+    .content ol {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .content p {
+      margin-bottom: 15px;
+    }
+
+    iframe {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 15px;
+      background-color: var(--orange);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .download-btn:hover {
+      background-color: var(--orange-dark);
+    }
+
+    /* Optional: animasi masuk */
+    .container {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="tugas">
+    <div class="container">
+      <h2 class="section-title">Tugas 1: Review Jurnal Sistem Pakar</h2>
+      <p class="subtitle">Identifikasi Jenis Kulit Wajah dengan Metode Certainty Factor</p>
+
+      <div class="info">
+        <p><strong>Kelompok:</strong> 2 (Kelas J2022)</p>
+        <p><strong>Anggota:</strong></p>
+        <ul>
+          <li>Salma Salsabilla (22110387)</li>
+          <li>Nurulita Septiani (22110439)</li>
+          <li>Amelia Chisha R (22110451)</li>
+          <li>Nur Auliya Putri (22110369)</li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <h3>Latar Belakang</h3>
+        <p>
+          Banyak orang melakukan perawatan wajah tanpa mengetahui jenis kulitnya, yang bisa menyebabkan jerawat atau iritasi. Karena itu, penelitian ini mengembangkan sistem pakar berbasis web untuk membantu mengidentifikasi jenis kulit secara cepat dan akurat menggunakan metode Certainty Factor.
         </p>
-        <h3 style="margin-top: 2rem; font-size: 1.4rem; color: #1e293b; font-weight: 700;">Key Contributions and Process</h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem;">
-          <div style="background-color: #ff7b2c; color: white; padding: 0.8rem 1rem; border-radius: 0.75rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
-            <img src="assets/icons/1-1.png" width="24"> Understanding User Needs
-          </div>
-          <div style="background-color: #ff7b2c; color: white; padding: 0.8rem 1rem; border-radius: 0.75rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
-            <img src="assets/icons/1-2.png" width="24"> User Journey Mapping
-          </div>
-          <div style="background-color: #ff7b2c; color: white; padding: 0.8rem 1rem; border-radius: 0.75rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
-            <img src="assets/icons/1-3.png" width="24"> Wireframing & Prototyping
-          </div>
-          <div style="background-color: #ff7b2c; color: white; padding: 0.8rem 1rem; border-radius: 0.75rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
-            <img src="assets/icons/1-4.png" width="24"> Iterative Design Process
-          </div>
-        </div>
-      </div>
-  
-      <!-- Image Section -->
-      <div style="flex: 1 1 400px; text-align: center;">
-        <img src="assets/imgs/AgroTour.png" alt="LaporPak Mockup" style="width: 100%; max-width: 400px;">
-      </div>
-    </div>
-  
-    <!-- Final Outcome -->
-    <div style="margin-top: 2rem; max-width: 1200px; margin-left: auto; margin-right: auto;">
-      <div style="display: flex; justify-content: flex-end; align-items: flex-start; gap: 0.75rem;">
-        <img src="assets/imgs/quote-up.png" width="24">
-        <div>
-          <h4 style="color: #1e293b; font-weight: 700; margin: 0;">Final Outcome</h4>
-          <p style="color: #475569; max-width: 500px; margin-top: 0.25rem;">
-            AgroTour simplifies navigation through tourism destinations with an intuitive interface. The platform aims to boost local economic growth by connecting users with unique agrotourism experiences.
-          </p>
-        </div>
+
+        <h3>Tujuan Penelitian</h3>
+        <ul>
+          <li>Mengembangkan sistem pakar untuk membantu identifikasi jenis kulit wajah.</li>
+          <li>Meningkatkan efisiensi dan akurasi dalam proses diagnosis tanpa harus konsultasi langsung ke dokter kulit.</li>
+          <li>Memberikan rekomendasi produk perawatan berdasarkan hasil diagnosa.</li>
+          <li>Meniru cara berpikir pakar menggunakan pendekatan Certainty Factor.</li>
+        </ul>
+
+        <h3>Metode Penelitian</h3>
+        <p>
+          Metode yang digunakan adalah Certainty Factor, yang digunakan untuk mengukur tingkat kepastian antara gejala dan diagnosis. Terdapat dua tahap utama: CF Parallel dan CF Kombinasi. Proses pengembangan sistem meliputi:
+        </p>
+        <ol>
+          <li>Perumusan Masalah & Studi Literatur</li>
+          <li>Analisis dan Desain</li>
+          <li>Koding dengan metode Certainty Factor</li>
+          <li>Uji Sistem menggunakan Blackbox Testing</li>
+        </ol>
+
+        <h3>Implementasi Sistem</h3>
+        <p>Jenis kulit yang diidentifikasi meliputi: normal, berminyak, kering, kombinasi, dan sensitif. Beberapa gejala yang digunakan antara lain:</p>
+        <ul>
+          <li>Tidak berminyak sepanjang hari (CF: 0.8)</li>
+          <li>Pori-pori besar di dagu, hidung, pipi (CF: 0.8)</li>
+          <li>Mudah iritasi saat terkena produk (CF: 0.8)</li>
+          <li>Area T-zone berminyak, pipi kering (CF: 0.4–0.6)</li>
+        </ul>
+
+        <h3>Pengujian Sistem</h3>
+        <ul>
+          <li><strong>Metode:</strong> Blackbox Testing dan Perhitungan Manual</li>
+          <li><strong>Responden:</strong> 35 wanita usia 15–50 tahun</li>
+          <li><strong>Hasil:</strong> 91% akurasi sistem sesuai hasil dokter</li>
+          <li><strong>Distribusi Jenis Kulit:</strong> 46% normal, 23% kering, 23% sensitif, 8% berminyak</li>
+        </ul>
+
+        <h3>Kelebihan Penelitian</h3>
+        <ul>
+          <li>Efisien untuk mengetahui jenis kulit</li>
+          <li>Meringankan beban layanan konsultasi dokter</li>
+          <li>Dapat digunakan oleh klinik maupun individu</li>
+          <li>Memberikan rekomendasi produk sebagai nilai tambah</li>
+        </ul>
+
+        <h3>Keterbatasan Penelitian</h3>
+        <ul>
+          <li>Keterbatasan data awal</li>
+          <li>Tidak mengakomodasi faktor lingkungan</li>
+          <li>Minim integrasi teknologi lain</li>
+          <li>Belum semua hasil terverifikasi oleh dokter</li>
+          <li>Basis data produk yang direkomendasikan masih minim</li>
+        </ul>
+
+        <h3>Kesimpulan</h3>
+        <p>Sistem pakar ini terbukti efektif dalam mengidentifikasi jenis kulit dengan akurasi 91%. Dapat digunakan sebagai alat bantu individu maupun klinik kecantikan. Namun, perlu pengembangan lebih lanjut agar hasilnya semakin akurat dan relevan.</p>
+
+        <h3>Lampiran PDF</h3>
+        <p>Kamu bisa membaca langsung jurnal aslinya di bawah ini:</p>
+        <iframe src="assets/docs/KEL 2 - Review-Jurnal-Sistem-Pakar.pdf" width="100%" height="600px"></iframe>
+
+        <p>
+          <a href="assets/docs/KEL 2 - Review-Jurnal-Sistem-Pakar.pdf" download class="download-btn">📄 Unduh Jurnal PDF</a>
+        </p>
       </div>
     </div>
   </section>
-  
+</body>
+</html>
